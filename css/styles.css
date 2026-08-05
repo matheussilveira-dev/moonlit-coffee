@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap');
+
+
+:root {
+    
+    --color-background: #F5F0E8;
+    --color-background-dark: #101827;
+
+    
+    --color-night: #182338;
+    --color-night-dark: #101827;
+
+    
+    --color-coffee: #4A2C20;
+    --color-coffee-dark: #2B1B16;
+
+    
+    --color-caramel: #B87941;
+    --color-gold: #C9A66B;
+
+    
+    --color-text: #2B2522;
+    --color-text-light: #6B5B53;
+
+    
+    --color-white: #FFFFFF;
+}
+
+/* --color-background → fundo principal da página
+--color-night → header ou alguma seção escura
+--color-coffee → botões e elementos importantes
+--color-coffee-dark → títulos/elementos de maior contraste
+--color-caramel → hover e detalhes
+--color-gold → pequenos detalhes relacionados à lua
+--color-text → textos principais
+--color-text-light → textos secundários */
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+
+    font-family: "DM Sans", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Cormorant Garamond", serif;
+}
+
+.header{
+    background-color: transparent;
+    height: 180px;
+}
+
+.header__container{
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    align-items: center;
+}
+
+.header__logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.logo{
+    width: 180px;
+    height: auto;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 50px;
+    
+}
+
+.nav__item{
+    color: var(--color-caramel);
+    font-size: 1.2rem;
+
+}
+
+.header__actives{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.actives__button-reserve{
+    padding: 20px 40px;
+    border: none;
+
+    background-color: var(--color-coffee);
+    border-radius: 5px;
+
+    color: var(--color-white);
+
+    margin-left: 50px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.1rem;
+}
+
+.sacola__link{
+    margin-right: 80px;
+}
+.menu,
+.sacola,
+.search{
+    width: 35px;
+    height: 35px;
+    fill: var(--color-caramel);
+}
