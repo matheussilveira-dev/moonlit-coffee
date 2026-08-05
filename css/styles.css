@@ -2,38 +2,35 @@
 
 
 :root {
-    
+
     --color-background: #F5F0E8;
     --color-background-dark: #101827;
 
-    
     --color-night: #182338;
-    --color-night-dark: #101827;
-
-    
     --color-coffee: #4A2C20;
-    --color-coffee-dark: #2B1B16;
 
-    
     --color-caramel: #B87941;
     --color-gold: #C9A66B;
 
-    
     --color-text: #2B2522;
     --color-text-light: #6B5B53;
-
-    
     --color-white: #FFFFFF;
+
 }
 
-/* --color-background → fundo principal da página
---color-night → header ou alguma seção escura
---color-coffee → botões e elementos importantes
---color-coffee-dark → títulos/elementos de maior contraste
---color-caramel → hover e detalhes
---color-gold → pequenos detalhes relacionados à lua
---color-text → textos principais
---color-text-light → textos secundários */
+/* SEÇÃO ESCURA
+━━━━━━━━━━━━━━━━━━━━
+fundo → #101827
+texto → #FFFFFF
+destaque → #B87941
+detalhes → #C9A66B */
+
+/* SEÇÃO CLARA
+━━━━━━━━━━━━━━━━━━━━
+fundo → #F5F0E8
+texto → #2B2522
+texto secundário → #6B5B53
+destaque → #B87941 */
 
 html,
 body{
@@ -48,13 +45,24 @@ h1, h2, h3 {
 }
 
 .header{
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.199);
+     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     height: 180px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 1000;
+
 }
 
 .header__container{
+    height: 100%;
     display: grid;
-    grid-template: 1fr / 1fr 4fr 2fr;
+    grid-template: 1fr / 1fr 2fr 1fr;
     align-items: center;
 }
 
@@ -89,10 +97,10 @@ h1, h2, h3 {
     
 }
 
-.nav__item{
-    color: var(--color-caramel);
+.nav__item-link{
+    text-decoration: none;
+    color: var(--color-white);
     font-size: 1.2rem;
-
 }
 
 .header__actives{
@@ -106,22 +114,126 @@ h1, h2, h3 {
     padding: 20px 40px;
     border: none;
 
-    background-color: var(--color-coffee);
+    background-color: var(--color-caramel   );
     border-radius: 5px;
 
     color: var(--color-white);
 
-    margin-left: 50px;
+    margin-left: 20px;
+    margin-right: 40px;
 
     font-family: "DM Sans", sans-serif;
     font-size: 1.1rem;
 }
 
-
-.menu,
-.sacola,
-.search{
+.icon__sacola,
+.icon__search{
     width: 35px;
     height: 35px;
-    fill: var(--color-caramel);
+    fill: var(--color-gold);
 }
+
+
+.hero{
+    background-image: url(../assets/images/background_hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    min-height: 100vh;
+
+    position: relative;
+}
+
+.hero__container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero__infos{
+    margin-left: 80px;
+}
+
+.hero__infos-marca{
+    color: var(--color-caramel);
+}
+
+.hero__infos-title{
+    color: var(--color-white);
+    font-size: clamp(3.5rem, 5vw, 5.5rem);
+}
+
+.title__destaque{
+    display: block;
+    font-size: clamp(4.5rem, 7vw, 7rem);
+    color: var(--color-caramel);
+}
+
+.hero__infos-decoration-line{
+    display: block;
+    width: 200px;
+    background-color: var(--color-gold);
+    height: 1px;
+}
+
+.hero__infos-complementar,
+.hero__infos-subtitle{
+    color: var(--color-white);
+    margin-top: 20px;
+}
+
+.hero__infos-subtitle{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.3rem;
+}
+ 
+
+.infos__buttons{
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.infos__button-menu{
+    padding: 25px 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    background-color: var(--color-caramel);
+    border: none;
+    border-radius: 5px;
+    
+    cursor: pointer;
+
+
+    
+}
+
+.icon__coffee{
+    width: 30px;
+    height: 30px;
+    fill: var(--color-white);
+}
+
+.menu__text{
+    white-space: nowrap;
+    color: var(--color-white);
+    font-size: 1.2rem;
+}
+
+.infos__button-story{
+    padding: 25px 40px;
+    background-color: transparent;
+
+    border: 1px solid var(--color-caramel);
+    border-radius: 5px;
+    color: var(--color-caramel);
+    font-size: 1.2rem;
+}
+
+
+
