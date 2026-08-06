@@ -48,7 +48,7 @@ h1, h2, h3 {
     background-color: rgba(0, 0, 0, 0.199);
      backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    height: 180px;
+    height: 150px;
     
     position: absolute;
     top: 0;
@@ -57,6 +57,7 @@ h1, h2, h3 {
 
     z-index: 1000;
 
+
 }
 
 .header__container{
@@ -64,6 +65,7 @@ h1, h2, h3 {
     display: grid;
     grid-template: 1fr / 1fr 2fr 1fr;
     align-items: center;
+
 }
 
 .header__logo{
@@ -74,8 +76,8 @@ h1, h2, h3 {
 }
 
 .logo{
-    width: 180px;
-    height: auto;
+    width: auto;
+    height: 150px;
 
     margin-left: 30px;
 }
@@ -111,7 +113,7 @@ h1, h2, h3 {
 }
 
 .actives__button-reserve{
-    padding: 20px 40px;
+    padding: 20px 35px;
     border: none;
 
     background-color: var(--color-caramel   );
@@ -157,46 +159,51 @@ h1, h2, h3 {
 
 .hero__infos-marca{
     color: var(--color-caramel);
+    letter-spacing: 2px;
 }
+
 
 .hero__infos-title{
     color: var(--color-white);
-    font-size: clamp(3.5rem, 5vw, 5.5rem);
+    font-size: clamp(4rem, 5vw, 6rem);
 }
 
 .title__destaque{
     display: block;
-    font-size: clamp(4.5rem, 7vw, 7rem);
+    font-size: clamp(5.5rem, 6.5vw, 7rem);
     color: var(--color-caramel);
 }
 
 .hero__infos-decoration-line{
     display: block;
-    width: 200px;
-    background-color: var(--color-gold);
-    height: 1px;
+    width: 100px;
+    background-color: var(--color-caramel);
+    height: 2px;
+    border-radius: 100%;
 }
 
 .hero__infos-complementar,
 .hero__infos-subtitle{
     color: var(--color-white);
-    margin-top: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
 }
 
 .hero__infos-subtitle{
-    font-family: "Cormorant Garamond", serif;
-    font-size: 1.3rem;
+    margin-top: 20px;
 }
+
+
  
 
 .infos__buttons{
     display: flex;
     gap: 30px;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .infos__button-menu{
-    padding: 25px 40px;
+    padding: 15px 40px;
 
     display: flex;
     justify-content: center;
@@ -226,7 +233,7 @@ h1, h2, h3 {
 }
 
 .infos__button-story{
-    padding: 25px 40px;
+    padding: 15px 40px;
     background-color: transparent;
 
     border: 1px solid var(--color-caramel);
