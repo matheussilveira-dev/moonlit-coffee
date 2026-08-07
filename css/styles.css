@@ -2,7 +2,6 @@
 
 
 :root {
-
     --color-background: #F5F0E8;
     --color-background-dark: #101827;
 
@@ -16,6 +15,9 @@
     --color-text-light: #6B5B53;
     --color-white: #FFFFFF;
 
+    --color-card-light: #F3ECE1;
+    --color-card-coffee: #F3E8DC;
+    --color-card-dark: #E7D4C1;
 }
 
 /* SEÇÃO ESCURA
@@ -242,5 +244,124 @@ h1, h2, h3 {
     font-size: 1.2rem;
 }
 
+.featured-coffee{
+    padding: 100px;
+    background-color: var(--color-background);
+}
+
+.featured__container{
+    width: 100%;
+}
+
+.featured__title{
+    color: var(--color-text);
+    font-size: clamp(4rem, 5vw, 6rem);
+    margin-bottom: 20px;
+}
+
+.featured__subtitle{
+    font-family: "DM Sans", sans-serif;
+    color: var(--color-caramel);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    letter-spacing: 2px;
+}
+
+.featured__descrition{
+    color: var(--color-text-light);
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    max-width: 700px;
+}
+
+.featured__cards{
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: stretch;
+    width: 100%;
+    
+}
+
+.card__coffee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    width: 23vw;
+    box-sizing: border-box;
+    padding: 20px;
+
+    gap: 20px;
+
+    background-color: var(--color-card-light);
+    color: var(--color-text);
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.377);
+    
+    margin-top: 100px;
+}
 
 
+.card__image{
+     width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.card__title{
+    width: 100%;
+    text-align: start;
+    font-size: clamp(1.8rem, 2vw, 2.3rem);
+}
+
+.card__description{
+    text-align: start;
+    max-width: 100%;
+    min-height: 4.5rem;
+}
+
+.card__infos-low{
+    width: 100% ;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.card__line{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.075);
+    height: 0.7px;
+    bottom: 65px;
+}
+
+.card__price{
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+}
+
+.card__button{
+    background: transparent;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    cursor: pointer;
+}
+
+.card__button-icon{
+    height: 25px;
+    width: 25px;
+    color: var(--color-caramel);
+}
+
+.card__button-text{
+    color: var(--color-caramel);
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+}
