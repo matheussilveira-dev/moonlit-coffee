@@ -563,3 +563,119 @@ h1, h2, h3 {
     width: 70%;
     letter-spacing: 1px;
 }
+
+.our-menu{
+    background-color: var(--color-background);
+    padding: 100px;
+}
+
+.menu__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    
+}
+
+.image__menu-moonlit{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+
+.menu__menu-moonlit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu__destaque-text{
+    font-family: "DM Sans", sans-serif;
+    color: var(--color-caramel);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    letter-spacing: 2px;
+}
+
+.menu__title{
+    font-size: clamp(4rem, 4vw, 5.5rem);
+    margin-bottom: 40px;
+    color: var(--color-text);
+    text-align: center;
+    width: 500px;
+}
+
+.menu__options{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 100%;
+    border-bottom: 1px solid var(--color-card-dark);
+}
+
+.menu__options-text{
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    letter-spacing: 2px;
+    color: var(--color-coffee);
+    padding: 0px 20px 30px 20px;
+
+}
+
+.menu__options-list{
+    list-style: none;
+    width: 100%;
+}
+
+.list__options{
+    margin-bottom: 20px;
+    padding: 30px 0px;
+    color: var(--color-coffee);
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options-coffee{
+    font-size: clamp(1.4rem, 2vw, 2rem);
+    border-bottom: 2px solid var(--color-caramel);
+    color: var(--color-caramel);
+}
+
+.list__box-itens{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list__itens-name{
+    font-size: clamp(1.2rem, 3vw, 2rem);
+}
+
+.list__itens-price{
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+}
+
+.list__options {
+    position: relative;
+    padding: 25px 0;
+}
+
+.list__options:not(:last-child) {
+    padding: 25px 0;
+    border-bottom: 1px solid var(--color-card-dark);
+}
+
+.list__options:not(:last-child)::after {
+    content: "✦";
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 0 15px;
+    background-color: var(--color-background);
+    color: var(--color-caramel);
+}
