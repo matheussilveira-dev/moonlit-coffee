@@ -239,7 +239,7 @@ h1, h2, h3 {
     padding: 15px 40px;
     background-color: transparent;
 
-    border: 1px solid var(--color-caramel);
+    border: 2px solid var(--color-caramel);
     border-radius: 5px;
     color: var(--color-caramel);
     font-size: 1.2rem;
@@ -261,7 +261,7 @@ h1, h2, h3 {
 }
 
 .featured__subtitle{
-    font-family: "DM Sans", sans-serif;
+   font-family: "DM Sans", sans-serif;
     color: var(--color-caramel);
     font-size: clamp(1rem, 2vw, 1.2rem);
     letter-spacing: 2px;
@@ -640,7 +640,7 @@ h1, h2, h3 {
 }
 
 .options-coffee{
-    font-size: clamp(1.4rem, 2vw, 2rem);
+    font-size: clamp(1.2rem, 1.6vw, 2rem);
     border-bottom: 2px solid var(--color-caramel);
     color: var(--color-caramel);
 }
@@ -679,3 +679,93 @@ h1, h2, h3 {
     background-color: var(--color-background);
     color: var(--color-caramel);
 }
+
+.visit{
+    background-color: var(--color-background-story);
+    padding: 80px 100px;
+}
+
+.visit__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.visit__image{
+    height: 900px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+
+.visit__informations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.visit__text-destaque{
+    font-family: "DM Sans", sans-serif;
+    color: var(--color-caramel);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    letter-spacing: 2px;
+}
+
+.visit__title{
+    font-size: clamp(4rem, 4vw, 5.5rem);
+    margin-bottom: 30px;
+    color: var(--color-text);
+    max-width: 600px;
+}
+
+.visit__description{
+    color: var(--color-coffee);
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+    letter-spacing: 2px;
+    max-width: 600px;
+    margin-bottom: 60px;
+}
+
+.visit__location,
+.visit__time,
+.visit__phone,
+.visit__button-directions{
+    display: flex;
+    
+    gap: 20px;
+    color: var(--color-text);
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+    margin-top: 20px;
+}
+
+.visit__button-directions{
+    padding: 15px 40px;
+    background-color: transparent;
+
+    margin-top: 40px;
+    width: 35%;
+    border: 2px solid var(--color-caramel);
+    border-radius: 5px;
+    color: var(--color-caramel);
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+.visit__location-icon,
+.visit__time-icon, 
+.visit__phone-icon,
+.visit__button-icon{
+    width: 25px;
+    height: 25px;
+    fill: var(--color-caramel);
+    flex-shrink: 0;
+}
+
+.visit__text-call{
+    margin-top: 40px;
+    color: var(--color-coffee);
+    color: var(--color-coffee);
+    letter-spacing: 2px;
+}
+
