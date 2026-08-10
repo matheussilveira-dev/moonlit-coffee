@@ -235,12 +235,24 @@ h1, h2, h3 {
     gap: 20px;
 
     background-color: var(--color-caramel);
-    border: none;
+    border: 1px solid var(--color-caramel);
     border-radius: 5px;
     
     cursor: pointer;
 
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    
+}
 
+.infos__button-menu:hover{
+    background-color: var(--color-caramel-deep);
+    border-color: var(--color-caramel-deep);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(184, 121, 65, 0.25);
     
 }
 
@@ -264,6 +276,23 @@ h1, h2, h3 {
     border-radius: 5px;
     color: var(--color-caramel);
     font-size: 1.2rem;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.infos__button-story:hover {
+    background-color: var(--color-caramel-deep);
+    border-color: var(--color-caramel-deep);
+
+    transform: translateY(-2px);
+    color: var(--color-white);
+
+    box-shadow: 0 5px 15px rgba(184, 121, 65, 0.25);
 }
 
 .featured-coffee{
@@ -323,8 +352,15 @@ h1, h2, h3 {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.377);
     
     margin-top: 100px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
+.card__coffee:hover {
+    transform: translateY(-6px);
+    box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.15);
+}
 
 .card__image{
      width: 100%;
@@ -375,6 +411,15 @@ h1, h2, h3 {
     gap: 10px;
 
     cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.card__button:hover .card__button-icon{
+    color: var(--color-caramel-deep);
+}
+
+.card__button:hover .card__button-text{
+    color: var(--color-caramel-deep);
 }
 
 .card__button-icon{
@@ -387,6 +432,7 @@ h1, h2, h3 {
     color: var(--color-caramel);
     font-size: clamp(1rem, 1.2vw, 1.2rem);
 }
+
 
 .our-story{
     padding: 100px;
@@ -449,16 +495,32 @@ h1, h2, h3 {
 }
 
 .story__button{
-    padding: 23px 20px;
+    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
-    width: 40%;
-    border: 1.5px solid var(--color-caramel);
+    width: 50%;
+    border: 2px solid var(--color-caramel);
     border-radius: 5px;
     color: var(--color-caramel);
     font-size: 1.2rem;
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.story__button:hover{
+    background-color: var(--color-caramel-deep);
+    border-color: var(--color-caramel-deep);
+
+    transform: translateY(-2px);
+    color: var(--color-white);
+
+    box-shadow: 0 5px 15px rgba(184, 121, 65, 0.25);
+    cursor: pointer;
 }
 
 
@@ -658,6 +720,20 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.list__options:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.list__options:hover .list__itens-name {
+    color: var(--color-caramel);
+}
+
+.list__options:hover .list__itens-price {
+    color: var(--color-caramel-light);
 }
 
 .options-coffee{
@@ -673,6 +749,11 @@ h1, h2, h3 {
 
 .list__itens-name{
     font-size: clamp(1.2rem, 3vw, 2rem);
+    transition: color 0.3s ease;
+}
+
+.list__options:hover .list__itens-name {
+    color: var(--color-caramel);
 }
 
 .list__itens-price{
@@ -769,10 +850,33 @@ h1, h2, h3 {
     border: 2px solid var(--color-caramel);
     border-radius: 5px;
     color: var(--color-caramel);
+    column-rule: #101827;
     font-size: 1.2rem;
     justify-content: center;
     align-items: center;
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
+
+.visit__button-directions:hover{
+    background-color: var(--color-caramel-deep);
+    border-color: var(--color-caramel-deep);
+
+    transform: translateY(-2px);
+    color: var(--color-white);
+
+    box-shadow: 0 5px 15px rgba(184, 121, 65, 0.25);
+    cursor: pointer;
+}
+
+.visit__button-directions:hover .visit__button-icon{
+    fill: var(--color-white);
+}
+
 .visit__location-icon,
 .visit__time-icon, 
 .visit__phone-icon,
@@ -840,6 +944,7 @@ h1, h2, h3 {
 .footer__links-nav{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 30px;
 }
 
@@ -848,6 +953,11 @@ h1, h2, h3 {
     text-decoration: none;
     color: var(--color-white);
     font-size: clamp(1rem, 1.5vw, 1.8rem);
+    transition: color 0.3s ease;
+}
+
+.footer__links-nav-itens:hover {
+    color: var(--color-caramel-light);
 }
 
 .footer__contact{
@@ -883,6 +993,11 @@ h1, h2, h3 {
 .address__main-email{
     color: inherit;
     font-size: clamp(1rem, 1.1vw, 1.2rem);
+    transition: color 0.3s ease;
+}
+
+.address__main-email:hover {
+    color: var(--color-caramel-light);
 }
 
 .address__endereco-text{
@@ -909,6 +1024,19 @@ h1, h2, h3 {
     display: flex;
     gap: 20px;
     align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.social__item:hover {
+    transform: translateX(5px);
+}
+
+.social__item:hover .social__item-text {
+    color: var(--color-caramel-light);
+}
+
+.social__item:hover svg {
+    fill: var(--color-caramel-light);
 }
 
 .social__item-text{
