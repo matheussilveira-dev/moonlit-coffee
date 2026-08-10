@@ -769,3 +769,74 @@ h1, h2, h3 {
     letter-spacing: 2px;
 }
 
+.footer{
+    background-color: var(--color-background-dark);
+    padding: 80px;
+}
+
+.footer__container{
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1.2fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 40px;
+    color: var(--color-white);
+}
+
+.footer__brand{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer__brand-logo{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.footer__brand-title{
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    color: var(--color-background);
+    max-width: 600px;
+}
+
+.footer__brand-description{
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    letter-spacing: 2px;
+}
+
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer__links-title{
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.footer__links-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer__links-nav-itens{
+     font-family:  "Cormorant Garamond", serif;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: clamp(1rem, 1.3vw, 1.6rem);
+}
+
+.address__endereco-icon,
+.address__phone-icon,
+.address__mail-icon,
+.social__item-instagram,
+.social__item-facebook,
+.social__item-pinterest{
+    width: 30px;
+    height: 30px;
+    fill: var(--color-caramel);
+}
