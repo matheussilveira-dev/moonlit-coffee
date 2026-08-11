@@ -40,8 +40,7 @@ destaque → #B87941 */
 html,
 body{
     width: 100%;
-    height: 100%;
-
+    min-height: 100%;
     font-family: "DM Sans", sans-serif;
 }
 
@@ -166,6 +165,7 @@ h1, h2, h3 {
     border: none;
     background-color: var(--color-caramel);
     border-radius: 5px;
+    text-decoration: none;
 
     color: var(--color-white);
 
@@ -307,6 +307,7 @@ h1, h2, h3 {
 .infos__button-story{
     padding: 15px 40px;
     background-color: transparent;
+    text-decoration: none;
 
     border: 2px solid var(--color-caramel);
     border-radius: 5px;
@@ -353,7 +354,7 @@ h1, h2, h3 {
     letter-spacing: 2px;
 }
 
-.featured__descrition{
+.featured__description{
     color: var(--color-text-light);
     font-size: clamp(1rem, 1.2vw, 1.3rem);
     letter-spacing: 2px;
@@ -378,7 +379,6 @@ h1, h2, h3 {
     position: relative;
 
     width: 100%;
-    box-sizing: border-box;
     padding: 20px;
 
     gap: 20px;
@@ -578,7 +578,6 @@ h1, h2, h3 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
     gap: 40px;
-    box-sizing: border-box;
 }
 
 .experience__introduction{
@@ -758,6 +757,8 @@ h1, h2, h3 {
     
     display: flex;
     flex-direction: column;
+    position: relative;
+    padding: 25px 0;
     gap: 10px;
     transition: transform 0.3s ease;
 }
@@ -767,11 +768,11 @@ h1, h2, h3 {
     cursor: pointer;
 }
 
-.list__options:hover .list__itens-name {
+.list__options:hover .list__items-name {
     color: var(--color-caramel);
 }
 
-.list__options:hover .list__itens-price {
+.list__options:hover .list__items-price {
     color: var(--color-caramel-light);
 }
 
@@ -786,22 +787,17 @@ h1, h2, h3 {
     justify-content: space-between;
 }
 
-.list__itens-name{
+.list__items-name{
     font-size: clamp(1.2rem, 3vw, 2rem);
     transition: color 0.3s ease;
 }
 
-.list__options:hover .list__itens-name {
+.list__options:hover .list__items-name {
     color: var(--color-caramel);
 }
 
-.list__itens-price{
+.list__items-price{
     font-size: clamp(1rem, 1.2vw, 1.3rem);
-}
-
-.list__options {
-    position: relative;
-    padding: 25px 0;
 }
 
 .list__options:not(:last-child) {
@@ -883,13 +879,12 @@ h1, h2, h3 {
 .visit__button-directions{
     padding: 15px 40px;
     background-color: transparent;
-
+    text-decoration: none;
     margin-top: 40px;
     width: 35%;
     border: 2px solid var(--color-caramel);
     border-radius: 5px;
     color: var(--color-caramel);
-    column-rule: #101827;
     font-size: 1.2rem;
     justify-content: center;
     align-items: center;
@@ -928,7 +923,6 @@ h1, h2, h3 {
 
 .visit__text-call{
     margin-top: 40px;
-    color: var(--color-coffee);
     color: var(--color-coffee);
     letter-spacing: 2px;
 }
@@ -1024,7 +1018,7 @@ h1, h2, h3 {
 }
 
 .address__endereco-text,
-.address__phone-numbere{
+.address__phone-number{
     font-size: clamp(1rem, 1.1vw, 1.2rem);
 }
 
@@ -1113,5 +1107,5 @@ h1, h2, h3 {
 
 .footer__copyright,
 .footer__slogan{
-    font-size: clamp(1rem, 1.1vw, 1.2rem);
+    font-size: clamp(1rem, 1vw, 1.1rem);
 }
