@@ -12,8 +12,6 @@ O projeto apresenta uma identidade visual inspirada na combinação entre **caf�
 
 ![Moonlit Coffee - Footer](./assets/screenshots/footer.png)
 
-> **Observação:** substitua o caminho acima pelo local onde você colocar o screenshot do projeto.
-
 ## 🎯 Sobre o projeto
 
 O **Moonlit Coffee** foi desenvolvido como um projeto de estudo e portfólio, com foco na construção de uma interface completa utilizando apenas **HTML e CSS**.
